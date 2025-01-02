@@ -1,0 +1,7 @@
+{
+  "styleName": "grid",
+  "items": {
+    "grid": "\r\n.grid\r\n{\r\n\t/* TODO:edit here */\r\n\r\n}\r\n",
+    "edit_here": "\r\n.grid\r\n{\r\n\tpointer-events: none;\r\n}\r\n"
+  }
+}
