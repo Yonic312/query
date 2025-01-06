@@ -53,6 +53,8 @@ TE1000 = class TE1000 extends AView
         }
     }
 
+    // ----------------------------------------------------------------
+
 	add_button(comp, info, e){
 
         // console.log("title :  ",this.notice_title.getText());
@@ -168,19 +170,19 @@ TE1000 = class TE1000 extends AView
 
             // 로그인 성공 시, 결과 데이터를 콘솔에 출력하고 화면을 닫습니다.
             console.log("선택 조회 : ",queryData);
-            thisObj.notice_index.setText(outblock1[0].notice_id);
-            thisObj.notice_title.setText(outblock1[0].notice_title);
-            thisObj.noticeContent.setData(outblock1[0].notice_content);
+            
+            console.log('type : ' + outblock1[0].notice_type-1);
+            thisObj.notice_type.selectItem(outblock1[0].notice_type-1);
 
             
         }
     );
 	}
 
-    // 조회
+    // 조회버튼 클릭
 	search_button(comp, info, e) {        
 
-        console.log('notice type : ',this.top_notice_type.getData())
+        console.log('notice type : ',this.top_notice_type.getData());
         
     	this.searchList(
             this.top_notice_type.getData(),
@@ -189,9 +191,9 @@ TE1000 = class TE1000 extends AView
         )
 	}
 
+    // 검색함수
     searchList(type, start_date, end_date, next_key){
-        this.main_grid.removeAll();
-        this.main_grid.removeAll(); 
+        this.main_grid.removeAll(); // 초기화
 
         const thisObj = this;
         console.log("함수 타입 : ", type);
@@ -235,21 +237,6 @@ TE1000 = class TE1000 extends AView
             if (!outblock1 || outblock1.length <= 0) {
                 AToast.show('조회된 데이터가 없습니다.');
                 return;
-            }
-
-            // 로그인 성공 시, 결과 데이터를 콘솔에 출력하고 화면을 닫습니다.
-            console.log("q : ",queryData);
-            //console.log(queryData.length);
-
-            for(let i=0; i < outblock1.length; i++){
-                var data = [
-                outblock1[i].notice_id,
-                outblock1[i].notice_title,
-                outblock1[i].notice_content,
-                outblock1[i].notice_type,
-                outblock1[i].notice_date
-                ];
-            thisObj.main_grid.addRow(data);
             }
             console.log(queryData);
         }
@@ -313,6 +300,7 @@ TE1000 = class TE1000 extends AView
         }
     );
 
+    // 초기화
     this.searchList(
             thisObj.notice_type.getData(),
              this.top_start_date.getDateString(),
@@ -336,7 +324,6 @@ TE1000 = class TE1000 extends AView
 		console.log(this.notice_index.getText());
 
         const thisObj = this;
-
         const index = this.notice_index.getText();
 
     // 아이디 또는 비밀번호가 입력되지 않은 경우, 경고 메시지를 표시하고 종료합니다.
@@ -389,10 +376,14 @@ TE1000 = class TE1000 extends AView
         }
     );
 
+    // Nv 가져오기
+    const getNextval = Number(this.main_grid.getCell(0,0).textContent)+1;
+
     this.searchList(
             thisObj.notice_type.getData(),
              this.top_start_date.getDateString(),
-             this.top_end_date.getDateString()
+             this.top_end_date.getDateString(),
+             getNextval
         )
 	}
 

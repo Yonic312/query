@@ -6,7 +6,8 @@
 		"InBlock1": {
 			"format": [
 				["관리자 id","user_id","","","varchar","32","0"],
-				["검색어","search","","","varchar","32","0"]
+				["검색어","search","","","varchar","32","0"],
+                ["next_key","next_key","","","varchar","128","0"]
 			]
 		}
 	},

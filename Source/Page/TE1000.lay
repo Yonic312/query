@@ -13,7 +13,7 @@
                 ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 0px; top: 0px; position: relative; float: left; height: 21px; width: 120px; margin-left: 3px;" id="TE1000--top_start_date"
                     ><div style="width:100%; height:100%"
                         ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true"
-                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-02" autocomplete="off"
+                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-03" autocomplete="off"
                             ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
                         ></div
                     ></div
@@ -24,7 +24,7 @@
                 ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 0px; top: 0px; position: relative; float: left; height: 21px; width: 120px; margin-left: 3px;" id="TE1000--top_end_date"
                     ><div style="width:100%; height:100%"
                         ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true"
-                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-02" autocomplete="off"
+                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-03" autocomplete="off"
                             ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
                         ></div
                     ></div
@@ -34,7 +34,7 @@
             ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 80px; height: 20px; top: calc(50% - 10px); position: relative; font-size: 14px; margin-left: 5px; left: 0px;" data-center-y="true" data-listener-click="TE1000:next_btn">다음</button
         ></div
         ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 770px; left: 0px; top: 0px; position: relative;"
-            ><div data-base="AGrid" data-class="AGrid" data-selectable="true" data-clear-rowtmpl="true" data-ver="3301" class="AGrid-Style" style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; visibility: visible;" data-hide-footer="true" data-listener-select="TE1000:onMain_gridSelect" id="TE1000--main_grid" data-single-select="1" data-fullrow-select="true"
+            ><div data-base="AGrid" data-class="AGrid" data-selectable="true" data-clear-rowtmpl="true" data-ver="3301" class="AGrid-Style" style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; visibility: visible;" data-hide-footer="true" data-listener-select="TE1000:onMain_gridSelect" id="TE1000--main_grid" data-single-select="1" data-fullrow-select="true" data-blocks-te1000="OutBlock1,notice_id,notice_title,notice_content,notice_type,notice_date" data-query-name="TE1000"
                 ><div class="grid-scroll-area" style=""
                     ><table class="grid-header-table" align="center"
                         ><colgroup
@@ -112,18 +112,18 @@
             ></div
         ></div
         ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 276px; position: relative; left: 0px; background-color: rgb(233, 236, 239); margin-left: 0px; margin-top: 0px; top: 0px;" id="TE1000--bottom"
-            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 1850px; height: 36px; left: 0px; top: 0px; position: relative; background-color: rgb(233, 236, 239); display: block;     float:left;"
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 1850px; height: 36px; left: 0px; top: 0px; position: relative; background-color: rgb(233, 236, 239); display: block;     float:left;" data-query-name="TE1010"
                 ><select data-base="ASelectBox" data-class="ASelectBox" class="ASelectBox-Style" style="width: 140px; height: 22px; left: 0px; top: calc(50% - 10px); position: relative; float: left; margin-left: 0px; margin-top: 0px;" data-center-y="true" id="TE1000--notice_type"
                     ><option value="1">공지</option
                     ><option value="2">긴급</option
                     ><option value="3">뉴스</option
                     ><option value="4">시스템</option
                 ></select
-                ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 1250px; height: 100%; left: 0px; top: 0px; position: relative; float: left; margin-left: 150px; background-color: rgba(0, 0, 0, 0);"
+                ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 1250px; height: 100%; left: 0px; top: 0px; position: relative; float: left; margin-left: 150px; background-color: rgba(0, 0, 0, 0);" data-blocks-te1010="OutBlock1,,notice_title" data-query-name="TE1010"
                     ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative;     float:left;" data-center-y="true">제목</label
                     ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style" autocomplete="off" style="width: 1210px; height: 28px; left: 0px; top: calc(50% - 12px); position: relative; float: left;" data-center-y="true" id="TE1000--notice_title"
                 ></div
-                ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 310px; height: 100%; left: 0px; top: 0px; position: relative; float: left; background-color: rgba(0, 0, 0, 0);"
+                ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 310px; height: 100%; left: 0px; top: 0px; position: relative; float: left; background-color: rgba(0, 0, 0, 0);" data-blocks-te1010="OutBlock1,notice_id," data-query-name="TE1010"
                     ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style" autocomplete="off" style="width: 100px; height: 22px; left: 0px; top: calc(50% - 9px); position: relative; float: right; margin-right: 5px;" data-center-y="true" id="TE1000--notice_index" readonly="readonly"
                     ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative; float:right;" data-center-y="true">일련번호</label
                 ></div
