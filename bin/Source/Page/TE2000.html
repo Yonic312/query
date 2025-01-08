@@ -1,145 +1,127 @@
-<div data-base="AView" data-class="TE2000" class="AView-Style" style="top: 0px; height: 1080px; background-color: rgb(255, 255, 255); left: 0px; margin-left: 4.73999px; width: auto; min-width: 2971px;" data-browser-width="2971" data-browser-height="1090" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ALabel&quot;,&quot;ASelectBox&quot;,&quot;ATextField&quot;,&quot;AButton&quot;,&quot;AGrid&quot;,&quot;ARadioGroup&quot;,&quot;ARadioButton&quot;,&quot;ATabView&quot;],&quot;mdfc&quot;:[&quot;ACalendarPicker&quot;]}"
-    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; left: 0px; top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0); height: 200px;"
-        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 36px; left: 0px; top: 0px; position: relative; background-color: rgb(205, 205, 205);" id="TE2000--top"
-            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 100%; left: 0px; top: 0px; position: relative;"
-                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative;     float:left;" data-center-y="true">담당자</label
-                ><select data-base="ASelectBox" data-class="ASelectBox" class="ASelectBox-Style" style="width: 140px; height: 22px; top: calc(50% - 10px); position: relative; left: 0px; margin-left: 5px;     float:left;" data-center-y="true" id="TE2000--user_id" data-apply-type="add"
-                    ><option value="0">-------------</option
-                ></select
-                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative; margin-left: 5px;     float:left;" data-center-y="true">회원명(ID, 이름)</label
-                ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style" autocomplete="off" style="width: 100px; height: 22px; top: calc(50% - 9px); position: relative; margin-left: 5px;     float:left;" data-center-y="true" id="TE2000--search"
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; left: 0px; top: calc(50% - 11px); position: relative; margin-left: 5px;     float:left;" data-center-y="true" data-listener-click="TE2000:search_btn">조회</button
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; left: 0px; top: calc(50% - 11px); position: relative; margin-left: 5px;     float:left;" data-center-y="true">다음</button
-                ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 0px; top: calc(50% - 13px); position: relative; margin-left: 10.0001px; display: block; float: left; width: 120px;" data-center-y="true" id="TE2000--start_date" data-from-year="20240101"
-                    ><div style="width:100%; height:100%"
-                        ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true" data-from-year=""
-                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-06" autocomplete="off"
-                            ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
-                        ></div
+<div data-base="AView" data-class="TE2000" class="AView-Style" style="top: 0px; height: 100%; background-color: rgb(255, 255, 255); left: 0px; width: 100%; min-height: 400px; position: relative; overflow: scroll hidden; min-width: 2971px;     overflow-x: hidden;" data-browser-width="2971" data-browser-height="1080" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ALabel&quot;,&quot;ASelectBox&quot;,&quot;ATextField&quot;,&quot;AButton&quot;,&quot;AGrid&quot;,&quot;ATabView&quot;],&quot;mdfc&quot;:[&quot;ACalendarPicker&quot;]}"
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 36px; left: 0px; top: 0px; position: relative; background-color: rgb(205, 205, 205);" id="TE2000--top"
+        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 100%; left: 0px; top: 0px; position: relative;"
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative;     float:left;" data-center-y="true">담당자</label
+            ><select data-base="ASelectBox" data-class="ASelectBox" class="ASelectBox-Style" style="width: 140px; height: 22px; top: calc(50% - 10px); position: relative; left: 0px; margin-left: 5px;     float:left;" data-center-y="true" id="TE2000--user_id" data-apply-type="add" data-blocks-te2010="InBlock1,user_id," data-query-name="TE2010"
+                ><option value="0">-------------</option
+            ></select
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative; margin-left: 5px;     float:left;" data-center-y="true">회원명(ID, 이름)</label
+            ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style" autocomplete="off" style="width: 100px; height: 22px; top: calc(50% - 9px); position: relative; margin-left: 5px;     float:left;" data-center-y="true" id="TE2000--search" data-blocks-te2010="InBlock1,search" data-query-name="TE2010"
+            ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; left: 0px; top: calc(50% - 11px); position: relative; margin-left: 5px;     float:left;" data-center-y="true" data-listener-click="TE2000:search_btn">조회</button
+            ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; left: 0px; top: calc(50% - 11px); position: relative; margin-left: 5px;     float:left;" data-center-y="true" data-listener-click="TE2000:clickNext" id="TE2000--nextBtn">다음</button
+            ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 0px; top: calc(50% - 13px); position: relative; margin-left: 10.0001px; display: block; float: left; width: 120px;" data-center-y="true" id="TE2000--start_date" data-from-year="20240101" data-blocks-te3000="InBlock1,start_date" data-query-name="TE3000|TE3010|TE3020|TE3030" data-blocks-te3010="InBlock1,start_date" data-blocks-te3020="InBlock1,start_date" data-blocks-te3030="InBlock1,start_date"
+                ><div style="width:100%; height:100%"
+                    ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true" data-from-year=""
+                        ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-08" autocomplete="off"
+                        ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
                     ></div
                 ></div
-                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative; float: left; margin-left: 5px; margin-top: 0px;" data-center-y="true">~</label
-                ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 10px; top: calc(50% - 13px); position: relative; margin-left: 5px; display: block; float: left; width: 120px;" data-center-y="true" id="TE2000--end_date"
-                    ><div style="width:100%; height:100%"
-                        ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true"
-                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-06" autocomplete="off"
-                            ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
-                        ></div
+            ></div
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: calc(50% - 10.5px); position: relative; float: left; margin-left: 5px; margin-top: 0px;" data-center-y="true">~</label
+            ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 10px; top: calc(50% - 13px); position: relative; margin-left: 5px; display: block; float: left; width: 120px; margin-top: 0px;" data-center-y="true" id="TE2000--end_date" data-blocks-te3000="InBlock1,end_date" data-query-name="TE3000|TE3010|TE3020|TE3030" data-blocks-te3010="InBlock1,end_date" data-blocks-te3020="InBlock1,end_date" data-blocks-te3030="InBlock1,end_date"
+                ><div style="width:100%; height:100%"
+                    ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true"
+                        ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-08" autocomplete="off"
+                        ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
                     ></div
                 ></div
             ></div
         ></div
-        ><div data-base="AView" data-class="AView" class="AView-Style" style="left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); width: auto; height: calc((100% - 0px) - 72px); float: left;" data-sgap-height="1"
-            ><div data-base="AGrid" data-class="AGrid" data-selectable="true" data-clear-rowtmpl="true" data-ver="3301" class="AGrid-Style" data-hide-footer="true" style="width: 480px; height: auto; left: 0px; top: 0px; position: relative; visibility: visible;" data-blocks-te2010="OutBlock1,user_id,member_id,member_name,acnt_cd,deposit_amt,used_yn" data-query-name="TE2010" id="TE2000--main_grid1" data-fullrow-select="true"
-                ><div class="grid-scroll-area" style=""
-                    ><table class="grid-header-table" align="center"
-                        ><colgroup
-                            ><col width="60"
-                            ><col width="60"
-                            ><col width="70"
-                            ><col width="110"
-                            ><col width="110"
-                            ><col width="70"
-                        ></colgroup
-                        ><thead align="center" class="head-prop" style="display: table-header-group;"
-                            ><tr height="22px"
-                                ><td class="" height="" style="font-size: 14px;">관리자 id</td
-                                ><td class="" style="font-size: 14px;">회원 id</td
-                                ><td class="" style="font-size: 14px;">회원 이름</td
-                                ><td class="" style="font-size: 14px;">계좌번호</td
-                                ><td class="" style="font-size: 14px;">예수금</td
-                                ><td class="" style="font-size: 14px;">사용여부</td
-                            ></tr
-                        ></thead
-                    ></table
-                    ><table class="grid-body-table" align="center"
-                        ><colgroup
-                            ><col width="60"
-                            ><col width="60"
-                            ><col width="70"
-                            ><col width="110"
-                            ><col width="110"
-                            ><col width="70"
-                        ></colgroup
-                        ><thead align="center" class="head-prop"
-                            ><tr height="0px" style="height: 0px;"
-                                ><td height="" style="font-size: 14px;"></td
-                                ><td style="font-size: 14px;"></td
-                                ><td style="font-size: 14px;"></td
-                                ><td style="font-size: 14px;"></td
-                                ><td style="font-size: 14px;"></td
-                                ><td style="font-size: 14px;"></td
-                            ></tr
-                        ></thead
-                        ><tbody align="center" class="body-prop"
-                            ><tr height="22px"
-                                ><td class="" style="font-size: 14px;"></td
-                                ><td class="" style="font-size: 14px;"></td
-                                ><td class="" style="font-size: 14px;"></td
-                                ><td class="" style="font-size: 14px;"></td
-                                ><td class="" style="font-size: 14px;" data-maskfunc="Number.money" data-maskparam="[]" data-maskorigin=""></td
-                                ><td class="" style="font-size: 14px;"></td
-                            ></tr
-                        ></tbody
-                    ></table
-                    ><table class="grid-footer-table" align="center"
-                        ><colgroup
-                            ><col width="60"
-                            ><col width="60"
-                            ><col width="70"
-                            ><col width="110"
-                            ><col width="110"
-                            ><col width="70"
-                        ></colgroup
-                        ><thead align="center" class="head-prop"
-                            ><tr height="0px"
-                                ><td></td
-                                ><td></td
-                                ><td></td
-                                ><td></td
-                                ><td></td
-                                ><td></td
-                            ></tr
-                        ></thead
-                        ><tfoot align="center" class="foot-prop" style="display: none;"
-                            ><tr height="22px"
-                                ><td>col1</td
-                                ><td>col2</td
-                                ><td>col3</td
-                                ><td></td
-                                ><td></td
-                                ><td></td
-                            ></tr
-                        ></tfoot
-                    ></table
-                ></div
+    ></div
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); width: auto; height: calc((100% - 0px) - 72px); float: left;" data-sgap-height="1"
+        ><div data-base="AGrid" data-class="AGrid" data-selectable="true" data-clear-rowtmpl="true" data-ver="3301" class="AGrid-Style" data-hide-footer="true" style="width: 480px; height: auto; left: 0px; top: 0px; position: relative; visibility: visible; margin-left: 0px; margin-top: 0px;" data-blocks-te2010="OutBlock1,user_id,member_id,member_name,acnt_cd,deposit_amt,used_yn" data-query-name="TE2010|TE3000" id="TE2000--main_grid1" data-fullrow-select="true" data-listener-select="TE2000:onMain_grid1Select" data-blocks-te3000="InBlock1,,,,acnt_cd,," data-apply-type="select"
+            ><div class="grid-scroll-area" style=""
+                ><table class="grid-header-table" align="center"
+                    ><colgroup
+                        ><col width="60"
+                        ><col width="60"
+                        ><col width="70"
+                        ><col width="110"
+                        ><col width="110"
+                        ><col width="70"
+                    ></colgroup
+                    ><thead align="center" class="head-prop" style="display: table-header-group;"
+                        ><tr height="22px"
+                            ><td class="" height="" style="font-size: 14px;">관리자 id</td
+                            ><td class="" style="font-size: 14px;">회원 id</td
+                            ><td class="" style="font-size: 14px;">회원 이름</td
+                            ><td class="" style="font-size: 14px;">계좌번호</td
+                            ><td class="" style="font-size: 14px;">예수금</td
+                            ><td class="" style="font-size: 14px;">사용여부</td
+                        ></tr
+                    ></thead
+                ></table
+                ><table class="grid-body-table" align="center"
+                    ><colgroup
+                        ><col width="60"
+                        ><col width="60"
+                        ><col width="70"
+                        ><col width="110"
+                        ><col width="110"
+                        ><col width="70"
+                    ></colgroup
+                    ><thead align="center" class="head-prop"
+                        ><tr height="0px" style="height: 0px;"
+                            ><td height="" style="font-size: 14px;"></td
+                            ><td style="font-size: 14px;"></td
+                            ><td style="font-size: 14px;"></td
+                            ><td style="font-size: 14px;"></td
+                            ><td style="font-size: 14px;"></td
+                            ><td style="font-size: 14px;"></td
+                        ></tr
+                    ></thead
+                    ><tbody align="center" class="body-prop"
+                        ><tr height="22px"
+                            ><td class="" style="font-size: 14px;"></td
+                            ><td class="" style="font-size: 14px;"></td
+                            ><td class="" style="font-size: 14px;"></td
+                            ><td class="" style="font-size: 14px;"></td
+                            ><td class="" style="font-size: 14px;" data-maskfunc="Number.money" data-maskparam="[]" data-maskorigin=""></td
+                            ><td class="" style="font-size: 14px;" data-maskfunc="TE2000.usedYn" data-maskparam="[]" data-maskorigin=""></td
+                        ></tr
+                    ></tbody
+                ></table
+                ><table class="grid-footer-table" align="center"
+                    ><colgroup
+                        ><col width="60"
+                        ><col width="60"
+                        ><col width="70"
+                        ><col width="110"
+                        ><col width="110"
+                        ><col width="70"
+                    ></colgroup
+                    ><thead align="center" class="head-prop"
+                        ><tr height="0px"
+                            ><td></td
+                            ><td></td
+                            ><td></td
+                            ><td></td
+                            ><td></td
+                            ><td></td
+                        ></tr
+                    ></thead
+                    ><tfoot align="center" class="foot-prop" style="display: none;"
+                        ><tr height="22px"
+                            ><td>col1</td
+                            ><td>col2</td
+                            ><td>col3</td
+                            ><td></td
+                            ><td></td
+                            ><td></td
+                        ></tr
+                    ></tfoot
+                ></table
             ></div
         ></div
-        ><div data-base="AView" data-class="AView" class="AView-Style" style="height: 200px; left: 0px; top: 0px; position: relative; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; background-color: rgba(0, 0, 0, 0); width: calc((100% - 0px) - 480px); overflow: visible;" data-sgap-width="1"
-            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; left: 0px; top: 0px; position: relative; margin-left: 0px; background-color: rgb(239, 239, 239); height: 44px;"
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100px; height: 100%; position: relative; background-color: rgb(255, 232, 202);">거래내역</button
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100px; height: 100%; position: relative; background-color: rgb(255, 255, 255); margin-left: 10px;">로그</button
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100px; height: 100%; position: relative; background-color: rgb(255, 255, 255); margin-left: 10px;">손익내역</button
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100px; height: 100%; position: relative; background-color: rgb(255, 255, 255); left: 0px; top: 0px; margin-left: 10px;">입출금내역</button
+    ></div
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="height: 200px; left: 0px; top: 0px; position: relative; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; background-color: rgba(0, 0, 0, 0); width: calc((100% - 0px) - 480px); overflow: visible;" data-sgap-width="1"
+        ><div data-base="ATabView" data-class="ATabView" class="ATabView-Style" data-state="0" style="width: 2491px; top: 0px; position: relative; float: left; white-space: normal; overflow: scroll; margin-left: 0px; height: auto; background-color: rgb(255, 255, 255); left: 0px; margin-top: 0px; overflow-x: hidden;     overflow-y: hidden;" data-tabinfo-s4="s4,입출금내역,Source/Sub/paid.lay,3" id="TE2000--tabView" data-style="" data-tab-select="s1" data-tabinfo-s3="s3,손익내역,Source/Sub/InCome.lay,2" data-tabinfo-s1="s1,거래내역,Source/Sub/trans.lay,0" data-tabinfo-s2="s2,로그,Source/Sub/log.lay,1" data-listener-actionup="TE2000:onTabViewActionup"
+            ><div class="tab_area" style="display: block; height: 44px;"
+                ><span class="ATabView_select" style="width: 100px; line-height: 44px;">tab1</span
+                ><span class="ATabView_deselect" style="width: 100px; line-height: 44px;">tab2</span
+                ><span class="ATabView_deselect" style="width: 100px; line-height: 44px;">tab3</span
             ></div
-            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: auto; height: 22px; left: 0px; top: 0px; position: relative; background-color: rgb(255, 255, 255); float: left; display: none;"
-                ><div data-base="ARadioGroup" data-class="ARadioGroup" class="ARadioGroup-Style" style="width: auto; height: auto; left: 0px; top: 0px; position: relative; float: left; display: block;" data-default-select="total" id="TE2000--select_option"
-                    ><span data-base="ARadioButton" data-class="ARadioButton" class="ARadioButton-Style radiobtn_check" tabindex="0" style="width: 52px; height: auto; left: 0px; top: 0px; position: relative;     float:left;" id="TE2000--total" data-radio-value="0">전체</span
-                    ><span data-base="ARadioButton" data-class="ARadioButton" class="ARadioButton-Style" tabindex="0" style="width: 52px; height: auto; position: relative; right: 0px; bottom: 0px; float: left; margin-left: 5px;" id="TE2000--new" data-radio-value="1">신규</span
-                    ><span data-base="ARadioButton" data-class="ARadioButton" class="ARadioButton-Style" tabindex="0" style="width: 52px; height: auto; position: relative; right: 0px; bottom: 0px; float: left; margin-left: 5px;" id="TE2000--change" data-radio-value="2">정정</span
-                    ><span data-base="ARadioButton" data-class="ARadioButton" class="ARadioButton-Style" tabindex="0" style="width: 52px; height: auto; position: relative; right: 0px; bottom: 0px; float: left; margin-left: 5px; margin-right: 5px;" id="TE2000--cancel" data-radio-value="3">취소</span
-                ></div
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; position: relative; right: 0px; bottom: 0px; margin-left: -1.54519e-05px; float: left; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);">조회</button
-                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 90px; height: 22px; position: relative; right: 0px; bottom: 0px; margin-left: 5px; float: left; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);">다음</button
-            ></div
-            ><div data-base="ATabView" data-class="ATabView" class="ATabView-Style" data-state="0" style="width: auto; height: auto; top: 0px; position: relative; right: 0px; float: left; white-space: normal; overflow: visible; margin-left: 0px;" data-tab-select="s1" data-tabinfo-s3="s3,손익내역,InCome,2" data-tabinfo-s2="s2,로그,Source/Sub/log.lay,1" data-tabinfo-s1="s1,trans,Source/Sub/trans.lay,0" data-tabinfo-s4="s4,입출금내역,Source/Sub/paid.lay,3" id="TE2000--tabView"
-                ><div class="tab_area" style="display: none;"
-                    ><span class="ATabView_select">tab1</span
-                    ><span class="ATabView_deselect">tab2</span
-                    ><span class="ATabView_deselect">tab3</span
-                ></div
-                ><div class="tab_contents" style="height: 100%;"></div
-            ></div
+            ><div class="tab_contents" style="height: calc(100% - 44px);"></div
         ></div
     ></div
 ></div>

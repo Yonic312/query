@@ -156,7 +156,7 @@
           },
           {
             "type": 4,
-            "name": "grid.stl",
+            "name": "tab.stl",
             "action": 8,
             "relType": 1,
             "path": "Template\\",
@@ -386,8 +386,7 @@
                 "name": "Nav.lay",
                 "action": 6,
                 "relType": 1,
-                "path": "Source\\Container\\",
-                "comment": ""
+                "path": "Source\\Container\\"
               }
             ]
           },
@@ -482,17 +481,17 @@
                 "comment": ""
               },
               {
-                "type": 5,
-                "name": "paid.js",
-                "action": 9,
+                "type": 3,
+                "name": "paid.lay",
+                "action": 6,
                 "relType": 1,
                 "path": "Source\\",
                 "comment": ""
               },
               {
-                "type": 3,
-                "name": "paid.lay",
-                "action": 6,
+                "type": 5,
+                "name": "paid.js",
+                "action": 9,
                 "relType": 1,
                 "path": "Source\\",
                 "comment": ""
@@ -536,6 +535,22 @@
                 "comment": "회원가입"
               }
             ]
+          },
+          {
+            "type": 12,
+            "name": "TE1000.fmt",
+            "action": 11,
+            "relType": 1,
+            "path": "Source\\",
+            "comment": ""
+          },
+          {
+            "type": 12,
+            "name": "TE2000.fmt",
+            "action": 11,
+            "relType": 1,
+            "path": "Source\\",
+            "comment": ""
           }
         ]
       },
